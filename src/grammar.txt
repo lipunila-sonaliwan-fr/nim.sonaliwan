@@ -1,0 +1,1040 @@
+# Lab'Oratoire / Projet magenta - Laboratoire de Psycholinguistique Cognitive et Sociale
+# https://lipunila.sonaliwan.fr - mailto:metalab@sonaliwan.fr
+S → intj
+S → ono
+S → ADJNUM
+S → proper ADJ intj
+S → VP
+S → VP : VP
+S → VP : NP
+S → VP intj
+S → conj_taso VP
+S → conj_taso VP : VP
+S → conj_taso VP intj
+S → PREP partint
+S → C S
+C → NP partlnk
+C → VP partlnk
+C → ADJ partlnk
+VP → partint
+VP → SUB PRD-li
+VP → SUB-li PRD
+VP → PRD-o
+VP → SUB PRD-o
+VP → #VP conj partint
+PREP → prep NP
+PREP → #PREP prep NP
+SUB-li → #sub
+SUB → partint
+SUB → NP
+SUB → NP subconj #SUB
+PRD-li → partprd VI
+PRD-li → partprd VI ADV
+PRD-li → partprd VI neg
+PRD-li → partprd VI ADV neg
+PRD-li → partprd VT OBJ
+PRD-li → partprd VT ADV OBJ
+PRD-li → partprd VT neg OBJ
+PRD-li → partprd VT ADV neg OBJ
+PRD-li → partprd aux VI
+PRD-li → partprd aux VI ADV
+PRD-li → partprd aux VI neg
+PRD-li → partprd aux VI ADV neg
+PRD-li → partprd aux VT OBJ
+PRD-li → partprd aux VT ADV OBJ
+PRD-li → partprd aux VT neg OBJ
+PRD-li → partprd aux VT ADV neg OBJ
+PRD-li → partprd aux neg VI
+PRD-li → partprd aux neg VI ADV
+PRD-li → partprd aux neg VI neg
+PRD-li → partprd aux neg VI ADV neg
+PRD-li → partprd aux neg VT OBJ
+PRD-li → partprd aux neg VT ADV OBJ
+PRD-li → partprd aux neg VT neg OBJ
+PRD-li → partprd aux neg VT ADV neg OBJ
+PRD-li → partprd NP
+PRD-li → partprd PREP
+PRD-li → partprd VI PREP
+PRD-li → partprd VI ADV PREP
+PRD-li → partprd VI neg PREP
+PRD-li → partprd VI ADV neg PREP
+PRD-li → partprd VT OBJ PREP
+PRD-li → partprd VT ADV OBJ PREP
+PRD-li → partprd VT neg OBJ PREP
+PRD-li → partprd VT ADV neg OBJ PREP
+PRD-li → partprd aux VI PREP
+PRD-li → partprd aux VI ADV PREP
+PRD-li → partprd aux VI neg PREP
+PRD-li → partprd aux VI ADV neg PREP
+PRD-li → partprd aux VT OBJ PREP
+PRD-li → partprd aux VT ADV OBJ PREP
+PRD-li → partprd aux VT neg OBJ PREP
+PRD-li → partprd aux VT ADV neg OBJ PREP
+PRD-li → partprd aux neg VI PREP
+PRD-li → partprd aux neg VI ADV PREP
+PRD-li → partprd aux neg VI neg PREP
+PRD-li → partprd aux neg VI ADV neg PREP
+PRD-li → partprd aux neg VT OBJ PREP
+PRD-li → partprd aux neg VT ADV OBJ PREP
+PRD-li → partprd aux neg VT neg OBJ PREP
+PRD-li → partprd aux neg VT ADV neg OBJ PREP
+PRD-li → partprd ADJ
+PRD-li → #PRD-li PRD-li
+PRD-o → partimp VI
+PRD-o → partimp VI ADV
+PRD-o → partimp VI neg
+PRD-o → partimp VI ADV neg
+PRD-o → partimp VT OBJ
+PRD-o → partimp VT ADV OBJ
+PRD-o → partimp VT neg OBJ
+PRD-o → partimp VT ADV neg OBJ
+PRD-o → partimp aux VI
+PRD-o → partimp aux VI ADV
+PRD-o → partimp aux VI neg
+PRD-o → partimp aux VI ADV neg
+PRD-o → partimp aux VT OBJ
+PRD-o → partimp aux VT ADV OBJ
+PRD-o → partimp aux VT neg OBJ
+PRD-o → partimp aux VT ADV neg OBJ
+PRD-o → partimp aux neg VI
+PRD-o → partimp aux neg VI ADV
+PRD-o → partimp aux neg VI neg
+PRD-o → partimp aux neg VI ADV neg
+PRD-o → partimp aux neg VT OBJ
+PRD-o → partimp aux neg VT ADV OBJ
+PRD-o → partimp aux neg VT neg OBJ
+PRD-o → partimp aux neg VT ADV neg OBJ
+PRD-o → partimp NP
+PRD-o → partimp PREP
+PRD-o → partimp VI PREP
+PRD-o → partimp VI ADV PREP
+PRD-o → partimp VI neg PREP
+PRD-o → partimp VI ADV neg PREP
+PRD-o → partimp VT OBJ PREP
+PRD-o → partimp VT ADV OBJ PREP
+PRD-o → partimp VT neg OBJ PREP
+PRD-o → partimp VT ADV neg OBJ PREP
+PRD-o → partimp aux VI PREP
+PRD-o → partimp aux VI ADV PREP
+PRD-o → partimp aux VI neg PREP
+PRD-o → partimp aux VI ADV neg PREP
+PRD-o → partimp aux VT OBJ PREP
+PRD-o → partimp aux VT ADV OBJ PREP
+PRD-o → partimp aux VT neg OBJ PREP
+PRD-o → partimp aux VT ADV neg OBJ PREP
+PRD-o → partimp aux neg VI PREP
+PRD-o → partimp aux neg VI ADV PREP
+PRD-o → partimp aux neg VI neg PREP
+PRD-o → partimp aux neg VI ADV neg PREP
+PRD-o → partimp aux neg VT OBJ PREP
+PRD-o → partimp aux neg VT ADV OBJ PREP
+PRD-o → partimp aux neg VT neg OBJ PREP
+PRD-o → partimp aux neg VT ADV neg OBJ PREP
+PRD-o → partimp ADJ
+PRD-o → #PRD-o PRD-o
+PRD → VI
+PRD → VI ADV
+PRD → VI neg
+PRD → VI ADV neg
+PRD → VT OBJ
+PRD → VT ADV OBJ
+PRD → VT neg OBJ
+PRD → VT ADV neg OBJ
+PRD → aux VI
+PRD → aux VI ADV
+PRD → aux VI neg
+PRD → aux VI ADV neg
+PRD → aux VT OBJ
+PRD → aux VT ADV OBJ
+PRD → aux VT neg OBJ
+PRD → aux VT ADV neg OBJ
+PRD → aux neg VI
+PRD → aux neg VI ADV
+PRD → aux neg VI neg
+PRD → aux neg VI ADV neg
+PRD → aux neg VT OBJ
+PRD → aux neg VT ADV OBJ
+PRD → aux neg VT neg OBJ
+PRD → aux neg VT ADV neg OBJ
+PRD → NP
+PRD → PREP
+PRD → VI PREP
+PRD → VI ADV PREP
+PRD → VI neg PREP
+PRD → VI ADV neg PREP
+PRD → VT OBJ PREP
+PRD → VT ADV OBJ PREP
+PRD → VT neg OBJ PREP
+PRD → VT ADV neg OBJ PREP
+PRD → aux VI PREP
+PRD → aux VI ADV PREP
+PRD → aux VI neg PREP
+PRD → aux VI ADV neg PREP
+PRD → aux VT OBJ PREP
+PRD → aux VT ADV OBJ PREP
+PRD → aux VT neg OBJ PREP
+PRD → aux VT ADV neg OBJ PREP
+PRD → aux neg VI PREP
+PRD → aux neg VI ADV PREP
+PRD → aux neg VI neg PREP
+PRD → aux neg VI ADV neg PREP
+PRD → aux neg VT OBJ PREP
+PRD → aux neg VT ADV OBJ PREP
+PRD → aux neg VT neg OBJ PREP
+PRD → aux neg VT ADV neg OBJ PREP
+PRD → ADJ
+VI → #V
+VT → #V
+V → v
+V → v_awen neg v_awen
+V → v_ike neg v_ike
+V → v_kalama neg v_kalama
+V → v_kama neg v_kama
+V → v_kasi neg v_kasi
+V → v_ken neg v_ken
+V → v_kon neg v_kon
+V → v_ku neg v_ku
+V → v_lape neg v_lape
+V → v_lon neg v_lon
+V → v_moli neg v_moli
+V → v_mu neg v_mu
+V → v_musi neg v_musi
+V → v_pakala neg v_pakala
+V → v_pali neg v_pali
+V → v_pilin neg v_pilin
+V → v_pu neg v_pu
+V → v_sewi neg v_sewi
+V → v_tawa neg v_tawa
+V → v_toki neg v_toki
+V → v_anpa neg v_anpa
+V → v_kokosila neg v_kokosila
+V → v_tan neg v_tan
+V → v_alasa neg v_alasa
+V → v_ante neg v_ante
+V → v_apeja neg v_apeja
+V → v_esun neg v_esun
+V → v_ete neg v_ete
+V → v_ijo neg v_ijo
+V → v_isipin neg v_isipin
+V → v_jaki neg v_jaki
+V → v_jan neg v_jan
+V → v_jasima neg v_jasima
+V → v_jo neg v_jo
+V → v_kepeken neg v_kepeken
+V → v_kiki neg v_kiki
+V → v_kipisi neg v_kipisi
+V → v_kiwen neg v_kiwen
+V → v_ko neg v_ko
+V → v_kule neg v_kule
+V → v_kulupu neg v_kulupu
+V → v_kuntu neg v_kuntu
+V → v_kute neg v_kute
+V → v_lanpan neg v_lanpan
+V → v_lawa neg v_lawa
+V → v_len neg v_len
+V → v_lete neg v_lete
+V → v_lili neg v_lili
+V → v_luka neg v_luka
+V → v_lukin neg v_lukin
+V → v_lupa neg v_lupa
+V → v_mama neg v_mama
+V → v_moku neg v_moku
+V → v_monsuta neg v_monsuta
+V → v_mute neg v_mute
+V → v_nanpa neg v_nanpa
+V → v_nasa neg v_nasa
+V → v_nimi neg v_nimi
+V → v_olin neg v_olin
+V → v_open neg v_open
+V → v_pake neg v_pake
+V → v_palin neg v_palin
+V → v_palisa neg v_palisa
+V → v_pana neg v_pana
+V → v_peto neg v_peto
+V → v_pimeja neg v_pimeja
+V → v_pini neg v_pini
+V → v_poki neg v_poki
+V → v_pona neg v_pona
+V → v_ponal neg v_ponal
+V → v_powe neg v_powe
+V → v_sama neg v_sama
+V → v_samu neg v_samu
+V → v_seli neg v_seli
+V → v_selo neg v_selo
+V → v_sijelo neg v_sijelo
+V → v_sike neg v_sike
+V → v_sin neg v_sin
+V → v_sitelen neg v_sitelen
+V → v_sona neg v_sona
+V → v_suli neg v_suli
+V → v_suno neg v_suno
+V → v_suwi neg v_suwi
+V → v_taki neg v_taki
+V → v_telo neg v_telo
+V → v_tu neg v_tu
+V → v_unpa neg v_unpa
+V → v_usawi neg v_usawi
+V → v_uta neg v_uta
+V → v_utala neg v_utala
+V → v_walo neg v_walo
+V → v_wan neg v_wan
+V → v_wawa neg v_wawa
+V → v_weka neg v_weka
+V → v_wile neg v_wile
+V → v_yupekosi neg v_yupekosi
+OBJ → partobj NP
+OBJ → #OBJ OBJ
+NP → partint
+NP → n
+NP → n ADJ
+NP → proper
+NP → proper ADJ
+NP → prodem
+NP → n adjpos
+NP → n adjpos prodem
+NP → n prodem
+NP → n ADJ adjpos
+NP → n ADJ adjpos prodem
+NP → n ADJ prodem
+NP → n ADJNUM
+NP → n ADJ ADJNUM
+NP → proper
+NP → prodem ADJNUM
+NP → n adjpos ADJNUM
+NP → n adjpos prodem ADJNUM
+NP → n prodem ADJNUM
+NP → n ADJ adjpos ADJNUM
+NP → n ADJ adjpos prodem ADJNUM
+NP → n ADJ prodem ADJNUM
+NP → NP partgrp NP
+ADJ → partint
+ADJ → adj
+ADJ → #ADJ adj
+ADJNUM → adjnum
+ADJNUM → #ADJNUM adjnum
+ADV → partint
+ADV → adv
+ADV → #ADV adv
+neg → ala
+sub → mi
+sub → sina
+adj → akesi
+adj → ala
+adj → alasa
+adj → ale
+adj → anpa
+adj → ante
+adj → awen
+adj → epiku
+adj → esun
+adj → ijo
+adj → ike
+adj → ilo
+adj → insa
+adj → jaki
+adj → jan
+adj → jasima
+adj → jelo
+adj → jo
+adj → kala
+adj → kalama
+adj → kama
+adj → kasi
+adj → ken
+adj → kili
+adj → kin
+adj → kiwen
+adj → kokosila
+adj → kon
+adj → ku
+adj → kule
+adj → kulupu
+adj → kute
+adj → lanpan
+adj → lape
+adj → laso
+adj → lawa
+adj → leko
+adj → len
+adj → lete
+adj → lili
+adj → linja
+adj → lipu
+adj → loje
+adj → lon
+adj → luka
+adj → lukin
+adj → lupa
+adj → ma
+adj → mama
+adj → mani
+adj → meli
+adj → meso
+adj → mije
+adj → misikeke
+adj → moku
+adj → moli
+adj → monsi
+adj → monsuta
+adj → mun
+adj → musi
+adj → mute
+adj → namako
+adj → nanpa
+adj → nasa
+adj → nasin
+adj → nena
+adj → noka
+adj → olin
+adj → open
+adj → pakala
+adj → pali
+adj → palisa
+adj → pan
+adj → pana
+adj → pilin
+adj → pimeja
+adj → pini
+adj → poka
+adj → poki
+adj → pona
+adj → pu
+adj → sama
+adj → seli
+adj → sewi
+adj → sijelo
+adj → sike
+adj → sin
+adj → sinpin
+adj → sitelen
+adj → sona
+adj → soweli
+adj → suli
+adj → suno
+adj → supa
+adj → suwi
+adj → tan
+adj → taso
+adj → tawa
+adj → telo
+adj → tenpo
+adj → toki
+adj → tomo
+adj → tonsi
+adj → tu
+adj → unpa
+adj → uta
+adj → utala
+adj → walo
+adj → wan
+adj → waso
+adj → wawa
+adj → weka
+adj → apeja
+adj → isipin
+adj → kan
+adj → kapesi
+adj → ke
+adj → kese
+adj → kiki
+adj → kulijo
+adj → kuntu
+adj → linluwi
+adj → majuna
+adj → powe
+adj → soto
+adj → teje
+adj → umesu
+adj → unu
+adj → usawi
+adj → waleja
+adj → Alan
+adj → Alapi
+adj → Amelika
+adj → Anku
+adj → Apika
+adj → Asija
+adj → Elena
+adj → Elopa
+adj → Epanja
+adj → Epanjo
+adj → Ilaki
+adj → Ilakija
+adj → Inli
+adj → Intu
+adj → Isalan
+adj → Isale
+adj → Isilan
+adj → Italija
+adj → Jawe
+adj → Jejusi
+adj → Jejusin
+adj → Ji
+adj → Juke
+adj → Juta
+adj → Juwese
+adj → Kanata
+adj → Kanse
+adj → Katolika
+adj → Kito
+adj → Kolisu
+adj → Lasin
+adj → Lasina
+adj → Loma
+adj → Losi
+adj → Masi
+adj → Masu
+adj → Mesiko
+adj → Mewika
+adj → netelan
+adj → nijon
+adj → nipon
+adj → Olinpi
+adj → Palata
+adj → Pawa
+adj → Peta
+adj → Pilasin
+adj → Pilisin
+adj → Pisin
+adj → Piten
+adj → Puta
+adj → Sanatan
+adj → Sanatana
+adj → Santa
+adj → Siko
+adj → Silami
+adj → Sonko
+adj → Tama
+adj → Tana
+adj → Teka
+adj → Tekasa
+adj → Tesa
+adj → Topisin
+adj → Tosi
+adj → Tuwita
+adjdem → ni
+adjpos → mi
+adjpos → ona
+adjpos → sina
+adjnum -> ala
+adjnum -> ale
+adjnum -> luka
+adjnum -> mute
+adjnum -> nanpa
+adjnum -> tu
+adjnum -> wan
+adjnum -> likujo
+adjnum -> neja
+adjnum -> po
+adjnum -> san
+adjnum -> tuli
+adv → ale
+adv → anpa
+adv → awen
+adv → epiku
+adv → ijo
+adv → ike
+adv → jaki
+adv → jan
+adv → jasima
+adv → kili
+adv → kin
+adv → kiwen
+adv → kon
+adv → lape
+adv → lawa
+adv → lete
+adv → lili
+adv → lukin
+adv → mani
+adv → meso
+adv → moli
+adv → musi
+adv → mute
+adv → nasa
+adv → noka
+adv → pakala
+adv → pali
+adv → pilin
+adv → pona
+adv → sama
+adv → seli
+adv → sewi
+adv → sijelo
+adv → sike
+adv → sin
+adv → sitelen
+adv → suli
+adv → suno
+adv → taso
+adv → tawa
+adv → telo
+adv → tenpo
+adv → toki
+adv → tomo
+adv → unpa
+adv → uta
+adv → utala
+adv → wawa
+adv → ali
+adv → ete
+adv → kan
+adv → Elata
+aux → awen
+aux → kama
+aux → ken
+aux → lukin
+aux → open
+aux → sona
+aux → wile
+subconj → anu
+subconj → en
+conj → anu
+conj → en
+conj → taso
+conj_taso → taso
+intj → a
+intj → n
+intj → pakala
+intj → pona
+intj → toki
+intj → ali
+intj → ke
+intj → oke
+intj → o
+n → akesi
+n → ala
+n → alasa
+n → ale
+n → anpa
+n → ante
+n → awen
+n → esun
+n → ijo
+n → ike
+n → ilo
+n → insa
+n → jaki
+n → jan
+n → jasima
+n → jelo
+n → jo
+n → kala
+n → kalama
+n → kama
+n → kasi
+n → ken
+n → kepeken
+n → kijetesantakalu
+n → kili
+n → kipisi
+n → kiwen
+n → ko
+n → kon
+n → ku
+n → kule
+n → kulupu
+n → kute
+n → lanpan
+n → lape
+n → laso
+n → lawa
+n → leko
+n → len
+n → lete
+n → lili
+n → linja
+n → lipu
+n → loje
+n → lon
+n → luka
+n → lukin
+n → lupa
+n → ma
+n → mama
+n → mani
+n → meli
+n → meso
+n → mije
+n → misikeke
+n → moku
+n → moli
+n → monsi
+n → monsuta
+n → mu
+n → mun
+n → musi
+n → mute
+n → namako
+n → nanpa
+n → nasa
+n → nasin
+n → nena
+n → nimi
+n → noka
+n → oko
+n → olin
+n → open
+n → pakala
+n → pali
+n → palisa
+n → pan
+n → pana
+n → pilin
+n → pimeja
+n → pini
+n → pipi
+n → poka
+n → poki
+n → pona
+n → pu
+n → sama
+n → seli
+n → selo
+n → sewi
+n → sijelo
+n → sike
+n → sin
+n → sinpin
+n → sitelen
+n → soko
+n → sona
+n → soweli
+n → suli
+n → suno
+n → supa
+n → suwi
+n → tan
+n → tawa
+n → telo
+n → tenpo
+n → toki
+n → tomo
+n → tonsi
+n → tu
+n → unpa
+n → uta
+n → utala
+n → walo
+n → wan
+n → waso
+n → wawa
+n → weka
+n → wile
+n → ali
+n → apeja
+n → ewe
+n → isipin
+n → kalamARR
+n → kamalawala
+n → kapesi
+n → kese
+n → kiki
+n → kuntu
+n → likujo
+n → linluwi
+n → loka
+n → majuna
+n → misa
+n → mulapisu
+n → pake
+n → pata
+n → peto
+n → polinpin
+n → pomotolo
+n → powe
+n → san
+n → soto
+n → sutopatikuna
+n → taki
+n → teje
+n → tuli
+n → unu
+n → usawi
+n → waleja
+n → Alan
+n → Alapi
+n → Amelika
+n → Anku
+n → Apika
+n → Asija
+n → Elata
+n → Elena
+n → Elopa
+n → Epanja
+n → Epanjo
+n → Ilaki
+n → Ilakija
+n → Ilan
+n → Inli
+n → Intu
+n → Isalan
+n → Isale
+n → Isilan
+n → Italija
+n → Jawe
+n → Jejusi
+n → Jejusin
+n → Jesu
+n → Jesuwa
+n → Ji
+n → Juke
+n → Juta
+n → Juwese
+n → Kanata
+n → Kanse
+n → Katolika
+n → Kito
+n → Kolisu
+n → Lasin
+n → Lasina
+n → Loma
+n → Losi
+n → Masi
+n → Masu
+n → Mesiko
+n → Mewika
+n → netelan
+n → nijon
+n → nipon
+n → Palata
+n → Pawa
+n → Peta
+n → Pilasin
+n → Pilisin
+n → Pingo
+n → Pisin
+n → Piten
+n → Puta
+n → Sanatan
+n → Sanatana
+n → Santa
+n → Siko
+n → Silami
+n → Sonko
+n → Tama
+n → Tana
+n → Teka
+n → Tekasa
+n → Tesa
+n → Topisin
+n → Tosi
+n → Tuwita
+prodem → ni
+proper → mi
+proper → ona
+proper → sina
+proref → mi
+proref → ona
+proref → sina
+ono → a
+ono → mu
+ono → mu-mu-muuu-mu-mu
+ono → wa
+partint → seme
+prep → kepeken
+prep → lon
+prep → sama
+prep → tan
+prep → tawa
+prep → ete
+v → awen
+v → ike
+v → kalama
+v → kama
+v → kasi
+v → ken
+v → kon
+v → ku
+v → lape
+v → lon
+v → moli
+v → mu
+v → musi
+v → pakala
+v → pali
+v → pilin
+v → pu
+v → sewi
+v → tawa
+v → toki
+v → anpa
+v → kokosila
+v → tan
+v → alasa
+v → ante
+v → apeja
+v → esun
+v → ete
+v → ijo
+v → isipin
+v → jaki
+v → jan
+v → jasima
+v → jo
+v → kepeken
+v → kiki
+v → kipisi
+v → kiwen
+v → ko
+v → kule
+v → kulupu
+v → kuntu
+v → kute
+v → lanpan
+v → lawa
+v → len
+v → lete
+v → lili
+v → luka
+v → lukin
+v → lupa
+v → mama
+v → moku
+v → monsuta
+v → mute
+v → nanpa
+v → nasa
+v → nimi
+v → olin
+v → open
+v → pake
+v → palin
+v → palisa
+v → pana
+v → peto
+v → pimeja
+v → pini
+v → poki
+v → pona
+v → ponal
+v → powe
+v → sama
+v → samu
+v → seli
+v → selo
+v → sijelo
+v → sike
+v → sin
+v → sitelen
+v → sona
+v → suli
+v → suno
+v → suwi
+v → taki
+v → telo
+v → tu
+v → unpa
+v → usawi
+v → uta
+v → utala
+v → walo
+v → wan
+v → wawa
+v → weka
+v → wile
+v → yupekosi
+v_awen → awen
+v_ike → ike
+v_kalama → kalama
+v_kama → kama
+v_kasi → kasi
+v_ken → ken
+v_kon → kon
+v_ku → ku
+v_lape → lape
+v_lon → lon
+v_moli → moli
+v_mu → mu
+v_musi → musi
+v_pakala → pakala
+v_pali → pali
+v_pilin → pilin
+v_pu → pu
+v_sewi → sewi
+v_tawa → tawa
+v_toki → toki
+v_anpa → anpa
+v_kokosila → kokosila
+v_tan → tan
+v_alasa → alasa
+v_ante → ante
+v_apeja → apeja
+v_esun → esun
+v_ete → ete
+v_ijo → ijo
+v_isipin → isipin
+v_jaki → jaki
+v_jan → jan
+v_jasima → jasima
+v_jo → jo
+v_kepeken → kepeken
+v_kiki → kiki
+v_kipisi → kipisi
+v_kiwen → kiwen
+v_ko → ko
+v_kule → kule
+v_kulupu → kulupu
+v_kuntu → kuntu
+v_kute → kute
+v_lanpan → lanpan
+v_lawa → lawa
+v_len → len
+v_lete → lete
+v_lili → lili
+v_luka → luka
+v_lukin → lukin
+v_lupa → lupa
+v_mama → mama
+v_moku → moku
+v_monsuta → monsuta
+v_mute → mute
+v_nanpa → nanpa
+v_nasa → nasa
+v_nimi → nimi
+v_olin → olin
+v_open → open
+v_pake → pake
+v_palin → palin
+v_palisa → palisa
+v_pana → pana
+v_peto → peto
+v_pimeja → pimeja
+v_pini → pini
+v_poki → poki
+v_pona → pona
+v_ponal → ponal
+v_powe → powe
+v_sama → sama
+v_samu → samu
+v_seli → seli
+v_selo → selo
+v_sijelo → sijelo
+v_sike → sike
+v_sin → sin
+v_sitelen → sitelen
+v_sona → sona
+v_suli → suli
+v_suno → suno
+v_suwi → suwi
+v_taki → taki
+v_telo → telo
+v_tu → tu
+v_unpa → unpa
+v_usawi → usawi
+v_uta → uta
+v_utala → utala
+v_walo → walo
+v_wan → wan
+v_wawa → wawa
+v_weka → weka
+v_wile → wile
+v_yupekosi → yupekosi
+partprd → li
+partobj → e
+partlnk → la
+partgrp → pi
+partimp → o
+partqtO → te
+partqtF → to
+: → :
