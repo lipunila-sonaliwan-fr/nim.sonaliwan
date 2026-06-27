@@ -1,6 +1,6 @@
 ```
    _._
- o|- -|o This file is licensed under CC4-BY-NC-SA international license.
+ o|- -|o This file is licensed under CC BY-NC-SA 4.0 international license.
   ( l )  To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
     =    Author: jean-marc "jihem" quere 2016
 ```
@@ -57,7 +57,7 @@ The sentence is therefore correct and corresponds to the following syntax tree:
    NP     VP
   /  \     \
 det   n     v
-The   ct    eats
+The   cat   eats
 ```
 
 When the returned ArrayList<String> is empty or contains only a single empty string, the sentence is incorrect.

@@ -1,6 +1,6 @@
 ```
    _._
- o|- -|o This file is licensed under CC4-BY-NC-SA international license.
+ o|- -|o This file is licensed under CC BY-NC-SA 4.0 international license.
   ( l )  To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
     =    Author: jean-marc "jihem" quere 2016
 ```
