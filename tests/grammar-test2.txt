@@ -1,0 +1,6 @@
+S → NP VP
+NP → det n
+VP → v
+det R→ ^[Tt]he$
+n → cat
+v → eats

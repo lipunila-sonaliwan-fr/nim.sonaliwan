@@ -1,8 +1,8 @@
-# nim c -d:release prsr.nim
+# nim c -r -d:release prsr.nim
 # CC BY-NC-SA 4.0 - jean-marc "jihem" quere 2016 (original Java version)
 
 import sonaliwan/parser
-import std/[os, times, strutils, streams]
+import std/[os, times, strutils, sequtils, streams]
 
 proc cleanSentence(s: string): string =
   result = s
@@ -67,9 +67,22 @@ proc main() =
           if bufferList.len == 0 or (bufferList.len == 1 and bufferList[0].len == 0):
             inc errorCount
 
+          var bestranking = 0
+          var besttree: seq[string] = @[]
           for str in bufferList:
-            echo str
-            writeBuf.add(str & "\n")
+            let ranking = str.split("(").filterIt(it.len>0).mapIt(it.split(" ")[0]).deduplicate().len
+            if ranking > bestranking:
+              bestranking = ranking
+              besttree = @[str]
+            elif ranking == bestranking:
+              besttree.add(str)
+
+          for str in bufferList:
+            if str in besttree:
+              writeBuf.add("→" & str & "\n")
+            else:
+              writeBuf.add(" " & str & "\n")
+
         except CatchableError:
           inc errorCount
           writeBuf.add("???\n")
@@ -84,10 +97,10 @@ proc main() =
     )
 
     let duration = (getTime() - start).inMilliseconds().float
-    echo "Durée : ", duration, " ms"
+    echo $lineCount, " line(s) processed in : ", duration, " ms (", $errorCount, " error(s)) → ", outputFile
   else:
     echo """
-Usage: prsr -i=input.txt -o=output.txt -g=grammar.txt [-d=term-term-...t]
+Usage: sonaliwan -i=input.txt -o=output.txt -g=grammar.txt [-d=term-term-...t]
 Lab'Oratoire / Projet magenta - Laboratoire de Psycholinguistique Cognitive et Sociale
 https://lipunila.sonaliwan.fr - mailto:metalab@sonaliwan.fr
 """

@@ -3,12 +3,14 @@
 import rule
 import terminalrules
 import nonterminalrules
-import std/[strutils, sequtils, tables, sets, deques, os, streams]
+import regexprules
+import std/[re, strutils, sequtils, tables, sets, deques, os, streams]
 
 type
   Parser* = ref object
     nonTerminalRules*: NonTerminalRules
     terminalRules*: TerminalRules
+    regexpRules*: RegexpRules
   Box = ref object
     s: seq[string]
 
@@ -21,11 +23,12 @@ proc inclNotIn(h: var HashSet[string], s: string): bool =
 proc newParser*(): Parser =
   Parser(
     nonTerminalRules: newNonTerminalRules(),
-    terminalRules: newTerminalRules()
+    terminalRules: newTerminalRules(),
+    regexpRules: newRegexpRules()
   )
 
-proc newParser*(ntr: NonTerminalRules, tr: TerminalRules): Parser =
-  Parser(nonTerminalRules: ntr, terminalRules: tr)
+proc newParser*(ntr: NonTerminalRules, tr: TerminalRules, rr: RegexpRules): Parser =
+  Parser(nonTerminalRules: ntr, terminalRules: tr, regexpRules: rr)
 
 proc newParser*(fileName: string): Parser =
   result = newParser()
@@ -42,9 +45,36 @@ proc newParser*(fileName: string): Parser =
       if key != "#":
         let rhs = ruleParts[2 .. ^1]
         if key == toLowerAscii(key):
-          result.terminalRules.add(key, rhs)
+          if ruleParts[1].startsWith("R"):
+            result.regexpRules.add(key, rhs)
+          else:
+            result.terminalRules.add(key, rhs)
         else:
           result.nonTerminalRules.add(key, rhs)
+
+proc getValidTerminalRulesForWords*(
+    p: Parser,
+    words: seq[string]
+  ): Table[string, HashSet[string]] =
+  var validTerminalRules = initTable[string, HashSet[string]]()
+  for word in words.deduplicate():
+    var validRules = initHashSet[string]()
+    for (k, vals) in p.terminalRules.rules.pairs:
+      if word in vals:
+        validRules.incl k
+
+    if validRules.len()==0:
+      for (k, regs) in p.regexpRules.rules.pairs:
+        for r in regs:
+          if contains(word, r): # manage a cached regexp registry?
+            p.terminalRules.add(k, @[word])
+            validRules.incl k
+            break
+
+    if validRules.len()>=0:
+      validTerminalRules[word] = validRules
+
+  validTerminalRules
 
 proc parse*(p: Parser, key, sentence, startWith: string): seq[string] =
   var processedKeys = initHashSet[string]()
@@ -57,7 +87,7 @@ proc parse*(p: Parser, key, sentence, startWith: string): seq[string] =
     var words = sentence.splitWhitespace().filterIt(it.len > 0)
 
     let validTerminalRules =
-      p.terminalRules.getValidTerminalRulesForWords(words)
+      p.getValidTerminalRulesForWords(words)
     let wordsSize = words.len
 
     var distinctTerminalRules = initHashSet[string]()

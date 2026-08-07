@@ -11,5 +11,5 @@ proc tok(): string =
   else:
     "ERROR"
 
-test "newParser(\"tests/grammar-test1.txt\").parse(...)":
+test "newParser(\"tests/grammar-test2.txt\").parse(...)":
   check tok() == "(S (NP (det The)(n cat))(VP (v eats)))"

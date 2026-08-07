@@ -111,3 +111,6 @@ parser.nim).
 [det, n_cat, v]
 0
 ```
+
+### Regular expression
+In a grammar file, when the separator (between the symbol and the terms) begins with "R", the terms are described by regular expressions: "Symbol R→ Regexp Regexp... Regexp".
