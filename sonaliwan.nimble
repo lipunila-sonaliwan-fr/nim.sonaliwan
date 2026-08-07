@@ -8,7 +8,6 @@ srcDir        = "src"
 installExt    = @["nim"]
 bin           = @["sonaliwan"]
 
-
 # Dependencies
 
 requires "nim >= 2.2.10"
