@@ -1,4 +1,4 @@
-# nim c -r -d:release prsr.nim
+# nim c -r -d:release sonaliwan.nim
 # CC BY-NC-SA 4.0 - jean-marc "jihem" quere 2016 (original Java version)
 
 import sonaliwan/parser
