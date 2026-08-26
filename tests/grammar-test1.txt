@@ -1,0 +1,6 @@
+S → NP VP
+NP → det n
+VP → v
+det → The the
+n → cat
+v → eats

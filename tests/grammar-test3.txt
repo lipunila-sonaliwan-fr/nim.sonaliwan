@@ -1,0 +1,10 @@
+S → NP VP
+NP → proper
+VP → v ADJ
+VP → ADJ
+ADJ → adj
+ADJ → #ADJ adj
+proper 1R→ [mi|sina]
+v 1→ moku
+adj 0→ moku
+adj 1→ pona

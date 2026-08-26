@@ -1,0 +1,16 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icônes de dossiers
+Icon?
+
+# Fichiers de métadonnées
+._*
+
+# Trash
+.Trashes
+
+nimble.develop
+nimble.paths
+nimbledeps
