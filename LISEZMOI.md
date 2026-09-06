@@ -118,4 +118,4 @@ Dans un fichier de grammaire, lorsque le séparateur (entre le symbole et les te
 ### Encore une chose !
 Un p'tit geste qui peut - grandement - nous aider... \[La caféïne c'est important pour une équipe de neuro-atypiques : TSA, TDAH, TAG, HPI et/ou THPI (membres de **mensa.fr** et de **triplenine.org**).\]
 
-[![Buy Me a Coffee](buymeacoffe.png)](https://buymeacoffee.com/sonaliwan.fr)
+[![Buy Me a Coffee](buymeacoffe-fre.png)](https://buymeacoffee.com/sonaliwan.fr)

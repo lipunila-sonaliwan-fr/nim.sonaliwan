@@ -118,4 +118,4 @@ In a grammar file, when the separator (between the symbol and the terms) begins 
 ### One more thing!
 A small gesture that can—hugely—help us out... [Caffeine is important for a team of neurodivergent individuals: ASD, ADHD, GAD, gifted IQ and highly/exceptionally gifted (members of **mensa.fr** and **triplenine.org**).]
 
-[![Buy Me a Coffee](buymeacoffe.png)](https://buymeacoffee.com/sonaliwan.fr)
+[![Buy Me a Coffee](buymeacoffe-eng.png)](https://buymeacoffee.com/sonaliwan.fr)
