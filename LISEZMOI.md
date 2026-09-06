@@ -115,4 +115,4 @@ La derniere valeur indiquée précise de nombre de règles non traitées en cas 
 ### Regexp
 Dans un fichier de grammaire, lorsque le séparateur (entre le symbole et les termes) débute par "R", les termes sont décrits par des expressions régulière : "Symbole R→ Regexp Regexp... Regexp".
 
-[![Buy Me a Coffee](https://sonaliwan.fr/buymeacoffe.png)](https://buymeacoffee.com/sonaliwan.fr)
+[![Buy Me a Coffee](buymeacoffe.png)](https://buymeacoffee.com/sonaliwan.fr)
