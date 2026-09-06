@@ -116,6 +116,6 @@ La derniere valeur indiquée précise de nombre de règles non traitées en cas 
 Dans un fichier de grammaire, lorsque le séparateur (entre le symbole et les termes) débute par "R", les termes sont décrits par des expressions régulière : "Symbole R→ Regexp Regexp... Regexp".
 
 ### Encore une chose !
-Un p'tit geste qui peut - grandement - nous aider... \[La caféïne c'est important pour une équipe de neuro-atypiques : TSA + TDAH + TAG + THPI (membres de [Mensa](https://www.mensa.fr){:target="_blank"} et [TNS](https://www.triplenine.org){:target="_blank"}).\]
+Un p'tit geste qui peut - grandement - nous aider... \[La caféïne c'est important pour une équipe de neuro-atypiques : TSA + TDAH + TAG + THPI (membres de mensa.fr et de triplenine.org)).\]
 
 [![Buy Me a Coffee](buymeacoffe.png)](https://buymeacoffee.com/sonaliwan.fr)
