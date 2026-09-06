@@ -114,3 +114,8 @@ parser.nim).
 
 ### Regular expression
 In a grammar file, when the separator (between the symbol and the terms) begins with "R", the terms are described by regular expressions: "Symbol R→ Regexp Regexp... Regexp".
+
+### One more thing!
+A small gesture that can—hugely—help us out... [Caffeine is important for a team of neurodivergent individuals: ASD, ADHD, GAD, gifted IQ and highly/exceptionally gifted (members of **mensa.fr** and **triplenine.org**).]
+
+[![Buy Me a Coffee](buymeacoffe.png)](https://buymeacoffee.com/sonaliwan.fr)
